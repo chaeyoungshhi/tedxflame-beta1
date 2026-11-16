@@ -25,3 +25,14 @@ Every photo is optional; a missing file falls back to an initials avatar.
 
 ## Countdown
 Target date is set in `js/main.js` (`TARGET`), currently 10 January 2027, 09:00 IST.
+
+## Deploy (Cloudflare Pages)
+First time only, log in to Cloudflare:
+
+    npx wrangler login
+
+Then deploy, now and after any change:
+
+    ./deploy.sh
+
+The live site is served at https://tedxflame-beta1.pages.dev
