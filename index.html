@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TEDxFLAME University 2027 | WILDFIRE: What Burns, Becomes</title>
+  <meta name="description" content="The ninth edition of TEDxFLAME University. 10 January 2027, Shantiniketan Auditorium, FLAME University, Pune." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Caveat:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23E62B1E'/%3E%3Ctext x='32' y='44' font-family='Arial' font-weight='900' font-size='36' text-anchor='middle' fill='white'%3EX%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#home" class="nav__brand" aria-label="TEDxFLAME University home">
+        <span class="nav__ted">TED<span class="x">x</span></span>
+        <span class="nav__sep"></span>
+        <span class="nav__school">FLAME University</span>
+        <span class="nav__divider">|</span>
+        <span class="nav__edition">NINTH EDITION</span>
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__forest"></div>
+      <div class="hero__glow"></div>
+      <canvas id="embers"></canvas>
+      <div class="hero__vignette"></div>
+    </div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow reveal">Ninth Edition &middot; 10 January 2027</p>
+      <h1 class="hero__title reveal">
+        <span class="red">TEDx</span>FLAME University<span class="red">'27</span>
+      </h1>
+      <p class="hero__sub reveal">THE COUNTDOWN HAS BEGUN</p>
+
+      <div class="countdown reveal" id="countdown" role="timer" aria-live="polite">
+        <div class="countdown__unit"><span class="countdown__num" id="cdDays">000</span><span class="countdown__label">Days</span></div>
+        <div class="countdown__colon">:</div>
+        <div class="countdown__unit"><span class="countdown__num" id="cdHours">00</span><span class="countdown__label">Hours</span></div>
+        <div class="countdown__colon">:</div>
+        <div class="countdown__unit"><span class="countdown__num" id="cdMins">00</span><span class="countdown__label">Minutes</span></div>
+        <div class="countdown__colon">:</div>
+        <div class="countdown__unit"><span class="countdown__num" id="cdSecs">00</span><span class="countdown__label">Seconds</span></div>
+      </div>
+
+      <p class="hero__tagline reveal">
+        Creating a space where <strong>fearless curiosity</strong> dares to challenge perspectives,
+        and <strong>bold ideas</strong> reshape what is possible.
+      </p>
+
+      <div class="hero__x reveal" aria-hidden="true">
+        <span>X</span>
+      </div>
+    </div>
+
+    <a href="#about" class="hero__scroll" aria-label="Scroll to theme">
+      <span class="hero__scroll-line"></span>
+    </a>
+  </section>
+
+  <!-- ============ THEME / ABOUT ============ -->
+  <section class="theme section" id="about">
+    <div class="container">
+      <div class="theme__head reveal">
+        <p class="section__kicker">The Theme</p>
+        <h2 class="section__title">
+          <span class="theme__word">WILDFIRE</span><span class="red">:</span>
+          <span class="theme__tag">What Burns, Becomes</span>
+        </h2>
+      </div>
+
+      <div class="theme__body">
+        <div class="theme__text reveal">
+          <p>
+            The ninth edition of TEDxFLAME University explores the idea of a wildfire: a single spark with the power to ignite
+            something far greater than itself. Like a flame that grows beyond its beginnings, every idea, belief and act of courage
+            carries the potential to spread, challenge conventions and transform the world around us. A wildfire is a reminder that
+            change rarely begins on a grand scale; sometimes, all it takes is <em class="red">one person daring to think differently</em>,
+            one voice refusing to be silenced, or one idea finding its way to the right minds.
+          </p>
+          <p>
+            Through this theme, we aim to inspire attendees to embrace the sparks within them, question the familiar and recognise
+            the power of ideas that refuse to remain contained. Wildfire represents the courage to create, the conviction to challenge
+            and the collective energy that turns individual thoughts into movements. When a spark finds its purpose, it can travel far
+            beyond its origin, set new possibilities in motion and <em class="red">leave behind a world transformed</em>.
+          </p>
+        </div>
+        <div class="theme__ember reveal" aria-hidden="true">
+          <div class="ember-ring"></div>
+          <div class="ember-core"></div>
+        </div>
+      </div>
+
+      <div class="pillars">
+        <article class="pillar reveal">
+          <div class="pillar__num">01</div>
+          <h3 class="pillar__title">Curiosity</h3>
+          <p>A single question leads to many more, creating a chain reaction.</p>
+        </article>
+        <article class="pillar reveal">
+          <div class="pillar__num">02</div>
+          <h3 class="pillar__title">Perspectives</h3>
+          <p>Depending on where one stands, a wildfire may be destructive or regenerative.</p>
+        </article>
+        <article class="pillar reveal">
+          <div class="pillar__num">03</div>
+          <h3 class="pillar__title">Bold Ideas</h3>
+          <p>Reshaping the landscape in which they arise.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SPEAKERS ============ -->
+  <section class="speakers section" id="speakers">
+    <div class="container">
+      <div class="speakers__head reveal">
+        <span class="script">Speakers</span>
+        <h2 class="section__title">Voices that <span class="red">spark</span></h2>
+      </div>
+
+      <div class="speaker-grid">
+        <article class="speaker reveal">
+          <div class="speaker__photo">
+            <img src="assets/speaker_dushyant_dubey.jpg" alt="Dushyant Dubey" loading="lazy" onerror="this.replaceWith(window.initialsAvatar('Dushyant Dubey'))" />
+          </div>
+          <h3 class="speaker__name">Dushyant Dubey</h3>
+          <p class="speaker__role">Social Activist</p>
+          <p class="speaker__bio">
+            To many in Bengaluru, Dushyant Dubey is simply "St Broseph", internet slang for a brother you can always turn to.
+            The press calls him the "Batman of Bengaluru". His Broseph Foundation brings together thousands of volunteers in four
+            cities to help people facing abuse, harassment and cybercrime, free of charge.
+          </p>
+        </article>
+
+        <article class="speaker reveal">
+          <div class="speaker__photo">
+            <img src="assets/speaker_neha_panchamiya.jpg" alt="Neha Panchamiya" loading="lazy" onerror="this.replaceWith(window.initialsAvatar('Neha Panchamiya'))" />
+          </div>
+          <h3 class="speaker__name">Neha Panchamiya</h3>
+          <p class="speaker__role">Wildlife Conservationist</p>
+          <p class="speaker__bio">
+            Neha Panchamiya has a master's in human nutrition and a background in graphic design. At 23 she took an unexpected
+            turn and founded the RESQ Charitable Trust. Nearly two decades later, RESQ is one of Maharashtra's leading wildlife
+            rescue organisations. Working with the state Forest Department, it treats everything from injured birds to trapped leopards.
+          </p>
+        </article>
+
+        <article class="speaker speaker--soon reveal">
+          <div class="speaker__photo speaker__photo--soon"><span>?</span></div>
+          <h3 class="speaker__name">More to be announced</h3>
+          <p class="speaker__role">Stay tuned</p>
+          <p class="speaker__bio">The lineup is still catching fire. Follow us for the next reveal.</p>
+        </article>
+      </div>
+
+      <div class="speakers__lists">
+        <div class="list-block reveal">
+          <h3 class="list-block__title">Previous Edition <span class="red">Speakers</span></h3>
+          <ul class="name-list">
+            <li>Mr Narendra Goidani</li>
+            <li>Ms Anu Aga</li>
+            <li>Mr Rajesh Mapuskar</li>
+            <li>Ms Anusha Attree</li>
+            <li>Mr Krishnan Komandur</li>
+            <li>Dr Uma Ganesh</li>
+          </ul>
+        </div>
+        <div class="list-block reveal">
+          <h3 class="list-block__title">Distinguished Voices at <span class="red">FLAME</span></h3>
+          <ul class="name-list">
+            <li>Dr S. Jaishankar</li>
+            <li>P.V. Sindhu</li>
+            <li>Sajjan Jindal</li>
+            <li>Amitabh Bachchan</li>
+            <li>Saina Nehwal</li>
+            <li>Kapil Dev</li>
+            <li>Ananya Birla</li>
+            <li>N.R. Narayana Murthy</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TEAM ============ -->
+  <section class="team section" id="team">
+    <div class="container">
+      <div class="team__head reveal">
+        <p class="section__kicker">The people behind the spark</p>
+        <h2 class="section__title">Meet the <span class="red">Team</span></h2>
+      </div>
+    </div>
+
+    <!-- Headshot marquee: all team photos -->
+    <div class="marquee reveal" aria-label="Team headshots">
+      <div class="marquee__track" id="marqueeTrack"></div>
+    </div>
+
+    <div class="container">
+      <div id="teamRoot" class="team__root"></div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT FLAME & VENUE ============ -->
+  <section class="flame section" id="venue">
+    <div class="container flame__grid">
+      <div class="flame__about reveal">
+        <p class="section__kicker">About</p>
+        <h2 class="section__title">FLAME <span class="red">University</span></h2>
+        <p>
+          FLAME University is one of India's leading institutions of liberal education, dedicated to nurturing both intellect and
+          individuality. Set on a sprawling green campus near Pune, FLAME brings together students, scholars and practitioners who
+          believe that learning across disciplines is the surest way to think freely, question boldly and build what comes next.
+        </p>
+        <p>
+          TEDxFLAME University is an independently organised, student-led event that carries that spirit onto the stage: ideas that
+          cross boundaries, speakers who challenge the familiar and an audience ready to carry the spark forward.
+        </p>
+      </div>
+      <div class="flame__venue reveal">
+        <div class="venue-card">
+          <p class="venue-card__kicker">Venue</p>
+          <h3 class="venue-card__title">Shantiniketan Auditorium</h3>
+          <p class="venue-card__sub">FLAME University, Pune</p>
+          <ul class="venue-card__facts">
+            <li><span class="red">500</span> seats</li>
+            <li><span class="red">10</span> January 2027</li>
+            <li><span class="red">1</span> stage, countless sparks</li>
+          </ul>
+          <a class="btn btn--ghost" href="https://maps.google.com/?q=FLAME+University+Lavale+Pune" target="_blank" rel="noopener">Get directions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER / CONTACT ============ -->
+  <footer class="footer" id="contact">
+    <div class="container footer__grid">
+      <div class="footer__brand reveal">
+        <div class="logo">
+          <span class="logo__ted">TED<span class="x">x</span></span>
+          <span class="logo__school">FLAME University</span>
+        </div>
+        <p class="footer__tag">x = independently organized TED event</p>
+        <address class="footer__address">
+          FLAME University<br />
+          Gat No. 1270, Lavale, Off Pune-Bangalore Highway<br />
+          Pune, Maharashtra 412115
+        </address>
+        <div class="footer__social">
+          <a href="https://instagram.com/tedxflameuniversity" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/tedxflameuniversity" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.2 8h4.6v14H.2V8zm7.6 0h4.4v1.9h.1c.6-1.1 2.1-2.3 4.3-2.3 4.6 0 5.4 3 5.4 6.9V22h-4.6v-6.6c0-1.6 0-3.6-2.2-3.6s-2.5 1.7-2.5 3.5V22H7.8V8z"/></svg>
+          </a>
+          <a href="https://youtube.com/@TEDx" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__connect reveal">
+        <h3 class="footer__title">Connect</h3>
+        <ul class="contact-list">
+          <li>
+            <span class="contact-list__name">Astha Choubey</span>
+            <span class="contact-list__role">Lead Organiser</span>
+            <a href="mailto:astha.choubey@flame.edu.in">astha.choubey@flame.edu.in</a>
+            <a href="tel:+919579472976">+91 95794 72976</a>
+          </li>
+          <li>
+            <span class="contact-list__name">Geeth Mehta</span>
+            <span class="contact-list__role">Co-Lead Organiser</span>
+            <a href="mailto:geeth.mehta@flame.edu.in">geeth.mehta@flame.edu.in</a>
+            <a href="tel:+919880042444">+91 98800 42444</a>
+          </li>
+          <li>
+            <span class="contact-list__name">Heer Desai &amp; Jiya Shah</span>
+            <span class="contact-list__role">Curation Chiefs</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; This independent TEDx event is operated under license from TED.</p>
+      <a href="#home" class="footer__top" aria-label="Back to top">&uarr; Top</a>
+    </div>
+  </footer>
+
+  <script src="js/team-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
